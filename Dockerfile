@@ -26,4 +26,4 @@ ADD . .
 # Install dependencies:
 RUN pip install -r requirements.txt
 # RUN python3 manage.py makemigrations
-CMD ["gunicorn", "--bind", ":8000", "--timeout", "120", "core.wsgi:application"]
+CMD ["python", "manage.py", "runserver"]
