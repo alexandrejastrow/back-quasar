@@ -20,7 +20,7 @@ RUN \
     apt-get install -y build-essential python3-dev libpq-dev
 
 WORKDIR /quasar
-COPY . .
+ADD . .
 
 # Install dependencies:
 RUN pip install -r requirements.txt
