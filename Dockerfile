@@ -10,16 +10,17 @@ RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
 FROM python:3.10
 
-WORKDIR /estour
+WORKDIR /quasar
 
-COPY --from=requirements-stage /tmp/requirements.txt /estour/requirements.txt
+COPY --from=requirements-stage /tmp/requirements.txt /quasar/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /estour/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /quasar/requirements.txt
 
 
-COPY . /estour
+COPY . /quasar
 
 EXPOSE 8000
+
 RUN python manage.py migrate
 
-CMD ["python", "manage.py", "runserver", ]
+CMD ["gunicorn", "--bind", ":8000", "core.wsgi:application"]

@@ -10,14 +10,3 @@ services:
     volumes:
       - .:/quasar
     restart: always
-  db:
-    image: postgres:13
-    environment:
-      POSTGRES_PASSWORD: "postgres"
-      POSTGRES_USER: "postgres"
-      POSTGRES_DB: "postgres"
-    ports:
-      - "5432:5432"
-    volumes:
-      - .data:/var/lib/postgresql/data/
-    restart: always
