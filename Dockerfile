@@ -10,7 +10,7 @@ FROM python:3.10
 
 EXPOSE 8000
 
-ENV DJANGO_SETTINGS_MODULE=gs.settings.production
+ENV DJANGO_SETTINGS_MODULE=core.settings
 ENV VIRTUAL_ENV=/opt/venv
 RUN python3 -m venv $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
@@ -25,5 +25,5 @@ ADD . .
 # Install dependencies:
 RUN pip install -r requirements.txt
 # RUN python3 manage.py makemigrations
-# RUN python3 manage.py migrate
+RUN python3 manage.py migrate
 CMD ["gunicorn", "--bind", ":8000", "--timeout", "120", "gs.wsgi:application"]
