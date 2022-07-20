@@ -1,11 +1,16 @@
 [tool.poetry]
-name = "fastapi"
+name = "fastaspi"
 version = "0.1.0"
 description = ""
 authors = ["alexandrejastrow <alexandre.jastrow@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.79.0"
+uvicorn = {extras = ["standard"], version = "^0.18.2"}
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+python-multipart = "^0.0.5"
 
 [tool.poetry.dev-dependencies]
 
