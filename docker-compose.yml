@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  quasar:
+    build: .
+    ports:
+      - "80:8000"
+    volumes:
+      - .:/quasar
+    restart: always
