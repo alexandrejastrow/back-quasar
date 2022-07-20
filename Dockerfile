@@ -1,26 +1,29 @@
-FROM python:3.10 as requirements-stage
-
-WORKDIR /tmp
-
-RUN pip install poetry
-
-COPY ./pyproject.toml ./poetry.lock* /tmp/
-
-RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
+# FROM python:3.8
+# ENV PYTHONUNBUFFERED=1
+# WORKDIR /gs
+# COPY requirements.txt /gs/
+# RUN pip install -r requirements.txt
+# COPY . /gs/
+# CMD python3 manage.py runserver 0.0.0.0:$PORT
 
 FROM python:3.10
 
-WORKDIR /quasar
-
-COPY --from=requirements-stage /tmp/requirements.txt /quasar/requirements.txt
-
-RUN pip install --no-cache-dir --upgrade -r /quasar/requirements.txt
-
-
-COPY . /quasar
-
 EXPOSE 8000
 
-RUN python manage.py migrate
+ENV DJANGO_SETTINGS_MODULE=gs.settings.production
+ENV VIRTUAL_ENV=/opt/venv
+RUN python3 -m venv $VIRTUAL_ENV
+ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
-CMD ["python", "manage.py", "runserver", ]
+RUN \
+    apt update && \ 
+    apt-get install -y build-essential python3-dev libpq-dev
+
+WORKDIR /quasar
+ADD . .
+
+# Install dependencies:
+RUN pip install -r requirements.txt
+# RUN python3 manage.py makemigrations
+# RUN python3 manage.py migrate
+CMD ["gunicorn", "--bind", ":8000", "--timeout", "120", "gs.wsgi:application"]
