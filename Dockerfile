@@ -22,4 +22,4 @@ COPY . /estour
 EXPOSE 8000
 RUN python manage.py migrate
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["gunicorn", "--bind", ":8000", "--timeout", "120", "core.wsgi:application"]
