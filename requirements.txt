@@ -1,26 +1,22 @@
-asgiref @ file:///home/jastrow/.cache/pypoetry/artifacts/22/46/4d/e9d170f76cad59b81e4568f6b37cce88f46df63c197e476a1020862182/asgiref-3.5.2-py3-none-any.whl
-attrs @ file:///home/jastrow/.cache/pypoetry/artifacts/c4/ee/75/fcd6c2f4c5a1d60b1bcd97014702ca01b3f032fd927d88780b38708409/attrs-21.4.0-py2.py3-none-any.whl
-certifi @ file:///home/jastrow/.cache/pypoetry/artifacts/b1/9b/6f/cd63ce97294ee9a1fb57e5cebf02f251fbb8f9ac48353a27ceeddc410b/certifi-2022.6.15-py3-none-any.whl
-cffi @ file:///home/jastrow/.cache/pypoetry/artifacts/8f/03/c5/3cf9dd7e8f36733162538ee0346ef86f4ad0f08a663096e18a252718fb/cffi-1.15.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-charset-normalizer @ file:///home/jastrow/.cache/pypoetry/artifacts/86/c8/3e/d878881698fbd2b72f484e4fca340588d633102920a002b66a293f9480/charset_normalizer-2.1.0-py3-none-any.whl
-cryptography @ file:///home/jastrow/.cache/pypoetry/artifacts/73/21/65/f5a67e6c0c00daabd3845d7dba8f886d0e04de7415f61152e392a3e7fb/cryptography-37.0.4-cp36-abi3-manylinux_2_24_x86_64.whl
-Deprecated @ file:///home/jastrow/.cache/pypoetry/artifacts/c9/f5/e5/f244166a6687e5b650d10f67e8f6ef4bd6251a60077323570ad7da52ab/Deprecated-1.2.13-py2.py3-none-any.whl
-Django @ file:///home/jastrow/.cache/pypoetry/artifacts/48/55/c3/0713efa3f112051fff9e2700ad4144cf5339e0396feb53331a26f384b3/Django-4.0.6-py3-none-any.whl
-django-oauth-toolkit @ file:///home/jastrow/.cache/pypoetry/artifacts/c5/eb/b2/4f2eaeaeff4c6874a77e2a00fea190168b58d9d8e7d14785da1cf44bbe/django_oauth_toolkit-2.1.0-py3-none-any.whl
-djangorestframework @ file:///home/jastrow/.cache/pypoetry/artifacts/7a/1a/9f/2d5a19ae6bfb95d667e8b4f5046c140bfa7cabbbf75bf9a179d1776aa1/djangorestframework-3.13.1-py3-none-any.whl
-idna @ file:///home/jastrow/.cache/pypoetry/artifacts/90/36/8c/81eabf6ac88608721ab27f439c9a6b9a8e6a21cc58c59ebb1a42720199/idna-3.3-py3-none-any.whl
-jwcrypto @ file:///home/jastrow/.cache/pypoetry/artifacts/9e/2a/4e/566e97b8ff9491731c0651929e1231e354df6e796bdbc224beebe45869/jwcrypto-1.3.1.tar.gz
-more-itertools @ file:///home/jastrow/.cache/pypoetry/artifacts/e1/1e/89/7079d5c51be8a7cec62bf074bb5cd4412c642eea637bb5afeacccb1414/more_itertools-8.13.0-py3-none-any.whl
-oauthlib @ file:///home/jastrow/.cache/pypoetry/artifacts/95/e6/47/7094c27bbb7f2ce2e9f1aaa01594e6a57184c3f861abe85623bded8680/oauthlib-3.2.0-py3-none-any.whl
-packaging @ file:///home/jastrow/.cache/pypoetry/artifacts/d3/1f/90/3f2473250ebd055fe7f0856810677783949fc0d2e5f25bbb4dc00ad0a9/packaging-21.3-py3-none-any.whl
-pluggy @ file:///home/jastrow/.cache/pypoetry/artifacts/5c/74/60/0a66715d8599e4bd0cf44f05ca11f99f9a3674820bd68856704692b818/pluggy-0.13.1-py2.py3-none-any.whl
-py @ file:///home/jastrow/.cache/pypoetry/artifacts/71/fb/64/bfdc833c2055a893883f33deaac35ef2cbdd95d58031cfc69a630f32bf/py-1.11.0-py2.py3-none-any.whl
-pycparser @ file:///home/jastrow/.cache/pypoetry/artifacts/08/b1/1b/4618699096207aa9eba9fa35118b2b6544fd1c9c2a79ea3601a3d325a0/pycparser-2.21-py2.py3-none-any.whl
-pyparsing @ file:///home/jastrow/.cache/pypoetry/artifacts/e1/09/c0/6a6df3ef412eb19fcda1b353ea54e3b48f9c518348fadd0967a962cbb6/pyparsing-3.0.9-py3-none-any.whl
-pytest @ file:///home/jastrow/.cache/pypoetry/artifacts/57/1c/f3/15f706754e9e232390482021cb2d6b1308eb6ad0d8160b165a2e2307ef/pytest-5.4.3-py3-none-any.whl
-pytz @ file:///home/jastrow/.cache/pypoetry/artifacts/76/c4/54/e82c514018d400ab72bc3cc53469bd3b519f30e674c7d905fd7c872314/pytz-2022.1-py2.py3-none-any.whl
-requests @ file:///home/jastrow/.cache/pypoetry/artifacts/14/1f/4d/1b93db6513b8ab38db841e4ce62691288ba549a5c1b6f3ca7274a1c9fd/requests-2.28.1-py3-none-any.whl
-sqlparse @ file:///home/jastrow/.cache/pypoetry/artifacts/10/f5/22/c9c991a71e27c4d8f69907d92cce74a369cbb3183dc4a6d27e2ae4ab0b/sqlparse-0.4.2-py3-none-any.whl
-urllib3 @ file:///home/jastrow/.cache/pypoetry/artifacts/8a/87/ce/4a44bf6bb59a745f4af7082c6977ab23a478fca039ad4d631dfdc0185b/urllib3-1.26.10-py2.py3-none-any.whl
-wcwidth @ file:///home/jastrow/.cache/pypoetry/artifacts/f1/2c/b7/d07af82a7caf20dd582cb8799baa7afd56c6240109e527ee2a904b43e4/wcwidth-0.2.5-py2.py3-none-any.whl
-wrapt @ file:///home/jastrow/.cache/pypoetry/artifacts/05/e7/a3/51f293f77ea2affd0664a96575cec6a3d66b214d7b4f897ae2198e0136/wrapt-1.14.1-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+asgiref 
+attrs
+certifi
+cffi
+charset-normalizer
+cryptography
+Deprecated
+Django
+djangorestframework
+idna
+oauthlib 
+packaging
+pluggy
+py
+pycparser
+pyparsing
+pytest
+requests
+sqlparse
+urllib3
+wcwidth
+wrapt
