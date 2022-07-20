@@ -26,5 +26,4 @@ ADD . .
 # Install dependencies:
 RUN pip install -r requirements.txt
 # RUN python3 manage.py makemigrations
-RUN python3 manage.py migrate
 CMD ["gunicorn", "--bind", ":8000", "--timeout", "120", "gs.wsgi:application"]
